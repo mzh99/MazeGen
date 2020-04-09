@@ -17,6 +17,7 @@ namespace MazeGen {
 
          float halfWidth = wallWidthMeters / 2.0f;
          var sb = new StringBuilder();
+         sb.AppendLine($"// Generation Parameters: Grid={grid.NumCols}x{grid.NumRows} with Wall Width: {wallWidth}, Wall Height: {wallHeight}, Wall Thickness: {wallThickness}");
          sb.AppendLine("string $groupCmd = \"group -w -name Maze_G \";");
          sb.AppendLine("string $wall[];");
          sb.AppendLine("string $proj;");
